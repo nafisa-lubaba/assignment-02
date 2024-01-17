@@ -81,10 +81,11 @@ main {
 /* banner-section */
 .banner {
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../images/group-13.png");
-    padding: 200px 50px 200px 50px;
     background-size: cover;
-    /* margin: 40px 100px; */
-    border-radius: 5px;
+    border-radius: 16px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
     margin-top: 50px;
 }
 
@@ -109,15 +110,15 @@ main {
 
 .input-data-section {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     margin: 0px 45px;
-    padding: 18px 400px;
+    padding: 16px;
+
     gap: 24px;
-    justify-content: center;
-    /* align-items: center;
-     align-content: center; */
+
 }
 
 .input-data-section input {
@@ -131,84 +132,72 @@ main {
 
 }
 
+.input-field {
+    position: relative;
+}
+
+.input-field i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #999;
+}
+
 .banner-btn {
-    width: 100px;
     border-radius: 8px;
     background: #FF5400;
     color: #FFF;
-    font-size: 1rem;
     font-weight: 400;
-    text-align: start;
-        gap: 5px;}
-    
-.input-data-section {
-    padding: 20px 50px;
+    padding: 8px 30px 8px 20px;
+
 }
 
-.main-section {
-    display: flex;
-    /* flex-direction: row; */
-    /* width: 100%; */
-    /* margin-right: 50px;
-    margin-left: 50px; */
+
+.popular-section {
     margin-top: 50px;
-    align-items: center;
-    gap: 2%;
+    display: flex;
+    gap: 2%
 }
 
-.popular-container {
-    /* margin-left: 40px; */
-    /* padding-left: 25px; */
-    /* padding-right: 30px; */
-    /* margin-right: 50px; */
+.popular-section-text {
     width: 49%;
-
-
 }
 
-.popular-container h2,
-.places-container h2 {
+.popular-section-image {
+    width: 49%;
+}
+
+.popular-section-image img {
+    width: 100%;
+}
+
+.popular-section-text h2,
+.places-container h2,
+.heritage-text-containe h2,
+.Newsletter-section-form h2 {
     color: #131318;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
-.popular-container p,
-.places-container p {
+.popular-section-text p,
+.places-container p,
+.heritage-text-containe p,
+.Newsletter-section-form p {
     color: rgba(19, 19, 24, 0.70);
     font-weight: 400;
     margin-bottom: 10px;
     margin-top: 10px;
-
 }
 
-.popular-container ul {
-    color: rgba(19, 19, 24, 0.70);
-    font-style: normal;
-    font-weight: 400;
-
-    padding-left: 40px;
+.popular-section-text ul {
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+
 }
-
-.popular-section-img {
-    width: 49%;
-}
-
-.popular-section-img img {
-    width: 100%;
-}
-
-/* .main-section .popular-section-img img{
-    width: 100%;
-} */
-
-
-/* padding-right: 30px;  */
-
 
 /* choose destination */
 .destination-section {
@@ -269,6 +258,50 @@ main {
 
 }
 
+/* bangladeshi heritege  */
+.bangladesh-heritage {
+    margin-top: 50px;
+}
+
+.heritage-text-containe {
+    text-align: center;
+}
+
+.image-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Style for the image itself */
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style for the heading */
+.image-heading {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0;
+}
+
 /* why choose us styles */
 .choose-section {
     margin-top: 50px;
@@ -301,83 +334,152 @@ main {
 }
 
 /* cart styles */
-
-.choose-cart {
+.choose-carts {
     display: flex;
-    gap: 15px;
     flex-direction: column;
     align-items: center;
-
+    gap: 2%;
 }
 
-.choose-cart-container {
+.choose-container {
     display: flex;
-    gap: 20px;
-
+    gap: 2%;
+    margin-bottom: 20px;
 }
 
-.choose-premium-title {
-    color: #131318;
-
-    font-size: 1.20rem;
-    font-weight: 800;
-    margin-bottom: 15px;
-}
-
-.choose-premium-des {
-    color: #5A5A5D;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 15px;
-
-}
-
-.choose-hotel {
+.choose-hotels {
+    width: 49%;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
-    width: 50%;
-    margin: 5px;
-    padding: 20px;
+    padding: 30px;
 }
 
-.choose-service {
-
+.choose-services {
+    width: 49%;
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
-    width: 50%;
-    margin: 5px;
-    padding: 20px;
+    padding: 30px;
 }
 
-.choose-best-price {
+.choose-price {
+    width: 48%;
     border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
-    background: rgba(251, 181, 99, 0.05);
-    width: 40%;
-    margin: 5px;
-    padding: 20px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 30px;
+}
+
+/* deals and section starts here  */
 
 
+.deal-done {
+    margin-top: 100px;
+}
+
+.deal-done-container {
+    text-align: center;
+}
+
+.deal-done-container h2 {
+    font-weight: 800;
+    color: #131318;
+    font-size: 1.5rem;
+}
+
+.deal-done-container p {
+    color: #5A5A5D;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
 
 }
+
+.deal {
+    background-image: url("../images/group-39.png");
+    background-size: cover;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.deal ul {
+    display: flex;
+    gap: 10px;
+}
+
+.deal li {
+    list-style: none;
+}
+
+.deal-1 {
+    background-image: url("../images/group-40.png");
+    background-size: cover;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.deal-1 ul {
+    display: flex;
+    gap: 10px;
+}
+
+.deal-1 li {
+    list-style: none;
+}
+
+.deal-cart {
+    width: 400px;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 20px;
+}
+
+.deal-cart-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #131318;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.deal-cart-decription {
+    color: #5A5A5D;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.deal-cart-price {
+    color: #FF5400;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* deals and section ends here  */
+
+
 
 /* perfect-places-styles */
 .perfect-places-section {
-    margin-top: 50px;
+
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
-
+    /* margin-bottom: 50px; */
     gap: 3%;
+    margin-top: 50px;
 }
 
 .places-container {
     width: 49%;
-    /* padding-right: 30px;
-    margin-right: 50px; */
-
 }
 
 .places-video {
@@ -393,7 +495,7 @@ main {
     font-size: 1rem;
     font-weight: 700;
     gap: 15px;
-    padding-left: 40px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
 
@@ -414,65 +516,39 @@ main {
 }
 
 
-
-
-
-/* }
-.places-video{
-    width: 50%;
-} */
 /* Newsletter-section styles */
-.Newsletter-section {
-    display: flex;
+
+.Newsletter-section-container {
     margin-top: 50px;
+    display: flex;
     gap: 2%;
 }
 
-.Subscribe-part {
-    width: 48%;
-    border-radius: 16px;
-    padding: 20px;
-    border: 1px solid #FF5400;
+.Newsletter-section-form {
+    width: 49%;
 }
 
-.Newsletter-section-img {
-    width: 50%;
+.Newsletter-section-image {
+    width: 49%;
 }
-.Newsletter-section-img img{
+
+.Newsletter-section-image img {
     width: 100%;
-    height: auto;
-}
-
-.Subscribe-part h2 {
-    color: #131318;
-    font-size: 24px;
-    font-weight: 800;
-    margin-top: 12px;
-
-}
-
-.Subscribe-part p {
-    color: #5A5A5D;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 12px;
-    margin-bottom: 10px;
-
 }
 
 .input-container {
-    gap: 30px;
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .input-container input {
     padding: 16px;
-
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
 }
-.input-container button{
+
+.input-container button {
     padding: 16px;
 
     border-radius: 8px;
@@ -490,7 +566,8 @@ main {
 
 .batch {
     border-radius: 8px;
-    background: #FF5400;;
+    background: #FF5400;
+    ;
     color: #FFF;
     width: 200px;
     padding: 10px;
@@ -521,54 +598,49 @@ main {
 
 
 /* footer-part-styles */
-.footer-container{
+.footer {
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    padding: 100px;
     display: flex;
-    width: 100%;
-    min-height: 20px;
-    gap: 5px;
-     justify-content: center;
-    text-align: center;
-    align-items: center; 
-            margin-top: 50px;}
-
-.footer{
-    background-color: rgba(19, 19, 24, 0.05);
-
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
-
-.footer-des{
-    color: #5A5A5D;
-
-font-size: 16px;
-font-weight: 400;
-/* display: flex; */
-/* flex-direction: column; */
- text-align: center;
-align-items: center;
-justify-content: center; 
-  margin-top: 10px;
-margin-left: 40px;
-margin-right: 40px;
-padding-left: 70px;
-padding-right: 70px;  
-
+.foot-logo-container{
+    display: flex;
 }
-.logo-container .logo{
-    margin-top: 12px;
-    margin-bottom: 20px; 
-    
-    
-
+.foot-logo-container img {
+    width: 50px;
 }
-.copy-right{
+.foot-logo-container p {
+    font-size: 2rem;
+    font-weight: 800;
     color: #131318;
-font-size: 16px;
-font-weight: 300;
-margin-top: 30px;
-margin-bottom: 30px;
 }
-.logo .horzental-line{
+
+.footer-des {
+    color: #5A5A5D;
+    font-weight: 400;
+    text-align: center
+}
+.footer-des{
+    margin-top: 20px;
+}
+.logo-container .logo {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.copy-right {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+}
+
+.logo .horzental-line {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -585,11 +657,20 @@ margin-bottom: 30px;
 /* for mobile device */
 /* header-section */
 @media screen and (max-width:600px) {
+    * {
+        padding: 5px;
+    }
+
     .header-section {
 
-        margin-left: 30px;
-        margin-right: 30px;
+        /* margin-left: 30px;
+        margin-right: 30px; */
+        justify-content: space-around;
 
+    }
+
+    .input-data-section {
+        flex-direction: column;
     }
 
     .nav-section p {
@@ -613,23 +694,58 @@ margin-bottom: 30px;
         /* margin-right: 60px; */
     }
 
-    /* popular section  */
-    .main-section {
+    .banner,
+    .bangladesh-heritage,
+    .choose-section {
+        margin-top: 20px;
+        
+    }
+    .banner h2{
+        font-size: 2.2rem;
+    }
+
+    .input-data-section {
         flex-direction: column;
-        padding: 0px;
+    }
+
+    .banner-btn {
+        padding: 8px 90px 8px 20px;
+    }
+
+    /* popular section  */
+    .popular-section {
+        flex-direction: column;
+    }
+
+    .popular-section-text {
+        width: 100%;
+    }
+
+    .popular-section-image {
+        width: 100%;
     }
 
     /* destination-section */
+    .destination-section {
+        margin-top: 10px;
+
+    }
+
     .destination-section p {
         padding-left: 0px;
         padding-right: 0px;
+        margin-bottom: 10px;
 
     }
+
 
     .place-container-1,
     .place-container-2,
     .place-container-3 {
         flex-direction: column;
+        gap: 5px;
+        margin-top: 0px;
+        margin-bottom: 10px;
 
     }
 
@@ -640,7 +756,46 @@ margin-bottom: 30px;
 
     }
 
+    .image-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        /* Display two columns for smaller screens */
+    }
+
     /* choose-section  */
+    /* cart styles */
+    .choose-section {
+        margin-top: 10px;
+
+    }
+
+    .choose-carts {
+        align-items: start;
+        gap: 10px;
+        /* gap: 1%; */
+    }
+
+    .choose-container {
+        flex-direction: column;
+        gap: 10px;
+        /* gap: 2%; */
+    }
+
+    .choose-hotels {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .choose-services {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .choose-price {
+        width: 100%;
+        padding: 5px;
+    }
+
     .choose-section-title p {
 
         padding-left: 0px;
@@ -648,32 +803,36 @@ margin-bottom: 30px;
 
     }
 
-    .choose-cart-container {
-        flex-direction: column;
+    /* deals and section starts here  */
+    .deal-done {
+        margin-top: 20px;
     }
 
-    .choose-hotel {
-        width: 100%;
+    .deal ul {
+        font-size: 0.75rem;
+        gap: 0px;
     }
 
-    .choose-service {
-        width: 100%;
+    .deal,
+    .deal-1 {
+
+        padding-top: 200px;
+        justify-content: center;
+
     }
 
-    .choose-best-price {
-        width: 100%;
-    }
-
+    /* deals and section ends here  */
     /* vedio section  */
     .perfect-places-section {
         flex-direction: column;
+        margin-top: 10px;
 
     }
 
     .places-container {
         width: 100%;
-        padding-right: 30px;
-        margin-right: 50px;
+        /* padding-right: 30px;
+        margin-right: 50px; */
 
     }
 
@@ -682,15 +841,32 @@ margin-bottom: 30px;
     }
 
     /* Newsletter */
-    .Newsletter-section {
+    .Newsletter-section-container {
         flex-direction: column;
+        margin-top: 10px;
     }
 
-    .Subscribe-part {
+    .Newsletter-section-form {
         width: 100%;
     }
 
-    .Newsletter-section-img {
+    .Newsletter-section-image {
         width: 100%;
     }
+
+    .batch {
+
+        width: 100px;
+        padding: 10px;
+        bottom: 140px;
+        left: 160px;
+    }
+    
+    .footer{
+        padding: 0px;
+        margin-top: 
+        0px;
+    }
+
+
 }
